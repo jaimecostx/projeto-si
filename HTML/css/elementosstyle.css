@@ -1,5 +1,5 @@
 /*
-Formatação elementos, composto por checkbox
+Formatação elementos, toggle switch
 */
 /* The switch - the box around the slider */
 .switch {
@@ -43,11 +43,11 @@ Formatação elementos, composto por checkbox
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #272727;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #272727;
 }
 
 input:checked + .slider:before {
@@ -63,4 +63,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-soon{
+  color: #f39c12;
 }

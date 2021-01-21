@@ -4,7 +4,7 @@
  *{
     margin: 0;
     padding: 0;
-    font-family: Century Gothic;
+    font-family: 'Roboto Mono', monospace !important;
  }
 
 header{
@@ -17,14 +17,15 @@ header{
 ul{
     float: right;
     list-style-type: none;
-    margin-top: 25px;
+    margin-top: 45px;
+    
 }
 
 ul li{
     display: inline-block;
 }
 ul li a{
-    text-decoration: none;
+    text-decoration: none; 
     color: #ffffff;
     padding: 5px 20px;
     border: 1px solid transparent;
@@ -44,6 +45,7 @@ ul li.active a{
 .logo img{
     float: left;
     width: 150px;
+    
     margin-left: 25px;
     height: auto;
 
@@ -63,3 +65,12 @@ ul li.active a{
     color: #ffffff;
     font-size: 70px;
 }
+ #clock {
+     width: 100%;
+     position: absolute;
+     font-size: 9vw;
+     color: white;
+     text-align:center;
+     font-family: 'Roboto Mono', monospace !important;
+
+ }

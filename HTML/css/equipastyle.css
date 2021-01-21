@@ -5,29 +5,30 @@ contem HTML, container, colunas, about section
 .about-section {
     position: relative;
     top: 10%; 
-    padding: 25px;
+    padding: 15px;
     text-align: center;
     color: white;
   }
 
 .about-section h1{
     color: #ffffff;
-    font-size: 70px;
+    font-size: 55px;
 }
 .titleUFP {
     color: rgb(80, 80, 80);
 }
 html{
+    font-family: 'Roboto Mono', monospace !important;
     box-sizing: border-box;
-    --bg-con: #ffffffb2;
+    --bg-con: #fcfcfcb2;
     --color-headings: #0077ff;
     --color-text: #333333;
 }
 
 html[data-theme="dark"] {
-    --bg-con: #000000b2;
+    --bg-con: #434343b2;
     --color-headings: #2d8bf7;
-    --color-text: #ffffff;
+    --color-text: #b5b5b5;
 }
 
 *, *:before, *:after {
@@ -48,10 +49,10 @@ html[data-theme="dark"] {
 .container {
     position: relative;
     top: 10%;
+    border-radius: 15px;
     padding: 8% 16px;
     background-color: var(--bg-con);
     color:var(--color-text);
-    
 }
   
 .container::after, .row::after {
