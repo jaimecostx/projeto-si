@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> < / html > </title>
+        <link rel="shortcut icon" type="image" href="assets/icon.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--FONTE LETRA-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+        <!--MODAL-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--CSS NOSSOS-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/equipastyle.css">
+        <link rel="stylesheet" type="text/css" href="css/elementosstyle.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/logo.png">
+                    </a>
+                </div>
+            <nav class="menu">
+                <ul id="myUL">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                    <li class="active"><a href="outros.html">Outros</a></li>
+                    <li><input class="searchbox" type="text" id="myInput" onkeyup="FunctionSearch()" placeholder="Pesquisa.." /></li>
+                    <li><label class="switch">
+                        <input type="checkbox" id="myCheck" onclick="FunctionColor()">
+                        <span class="slider round"></span>
+                      </label></li>    
+                </ul>
+            </nav>
+            </div>
+            <div class="about-section">
+                <h1>Outros</h1>    
+            </div> 
+            <div class="container">
+                <div class="row">
+                    <div id="mult"class="col-sm-4">
+                        <h2>Multiplicação</h2>
+                        <p>Ao clicar no botão abaixo, abrirá uma caixa modal onde poderá introduzir dois valores que serão multiplicados.</p>
+                        <p>O valor da Multiplicação aparecerá na mesma caixa modal, na caixa de texto mais abaixo.</p>
+                        <p><button onclick="mult()" type="button" class="btn btn-success"data-toggle="modal" data-target="#myMULT" id="submit">Abrir</button></p> 
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Outras funções</h2>
+                        <p><a href="mais.html" class="btn">AQUI</a></p>
+                    </div>
+                    <div id="divsao"class="col-sm-4">
+                        <h2>Divisão</h2>
+                        <p>Ao clicar no botão abaixo, abrirá uma caixa modal onde poderá introduzir dois valores que serão divididos.</p>
+                        <p>O valor da divisão aparecerá na mesma caixa modal, na caixa de texto mais abaixo.</p>
+                        <p><button onclick="div()" type="button" class="btn btn-success"data-toggle="modal" data-target="#myMULT" id="submit">Abrir</button></p>
+                    </div>
+                </div>
+            </div>
+             <!-- The Modal MULT-->
+  <div class="modal" id="myMULT">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Resultado</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <input type="text" class="input value1">
+            <p>.</p>
+            <input type="text" class="input value2 ">
+            <p>=</p>
+            <input type="text" disabled="disabled" id="result">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+        </header>
+        <script src="js/main.js"></script>
+        <script src="js/multndDiv.js"></script>
+    </body>
+</html>

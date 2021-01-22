@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="">
     <head>
-        <title>Equipa</title>
+        <title> < / html > </title>
         <link rel="shortcut icon" type="image" href="assets/icon.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,11 +26,11 @@
                     <img src="assets/logo.png">
                 </div>
             <nav class="menu">
-                <ul>
+                <ul id="myUL">
                     <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="equipa.html">Equipa</a></li>
-                    <li><a href="#">Multiplicação</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="outros.html">Outros</a></li>
+                    <li><input class="searchbox" type="text" id="myInput" onkeyup="FunctionSearch()" placeholder="Pesquisa.." /></li>    
                     <li><label class="switch">
                         <input type="checkbox" id="myCheck" onclick="FunctionColor()">
                         <span class="slider round"></span>
@@ -44,7 +44,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="assets/SKELETON.jpg" width="50%" style="display: block; margin-left: auto; margin-right: auto;"">
+                    <h3>Atividades Preferidas</h3>
+                    <p>As minhas atividades prediletas seriam sem dúvida programar, e aprender novas linguagens.</p>
+                    <p>Mesmo só com as bases de programação, ser capaz de produzir algo funcional é uma dos melhores sensações.</p>
                 </div>
                 <div class="col-sm-4">
                     <h2 style="text-align: center; ">Jaime Costa</h2>
@@ -55,9 +57,6 @@
                         </div>
                 </div>
                 <div class="col-sm-4">
-                    <h3>Atividades Preferidas</h3>
-                    <p>As minhas atividades prediletas seriam sem dúvida programar, e aprender novas linguagens.</p>
-                    <p>Mesmo só com as bases de programação, ser capaz de produzir algo funcional é uma dos melhores sensações.</p>
                     <h3>Expectativas para o Curso</h3>
                     <p>Ao entrar para este curso tenho como expectativas aprender a desenvolver software e as componentes básicas de hardware.</p>
                     <p>Isto serão bases para um futuro emprego na área de desenvolvimento de software.</p>
@@ -66,7 +65,6 @@
         </div>
            
         </header>
-        <script src="js/jsfileequipa.js"></script>
-        <script src="js/elementoequipa.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
